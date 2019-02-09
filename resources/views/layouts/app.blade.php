@@ -21,10 +21,19 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    {{ config('/home', 'Malavu') }}
+                </a>
+                <a class="navbar-brand" href="{{ route('post.create')}}">
+                    Register
+                </a>
+                <a class="navbar-brand" href="{{Route('post.show_patient')}}">
+                    Patient
+                </a>
+                <a class="navbar-brand" href="{{Route('appoint.create')}}">
+                    Appointment
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
